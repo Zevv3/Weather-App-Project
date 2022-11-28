@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<title>Title</title>
+</head>
+<body>
+    <h1 class="text-center">Weather App</h1>
+    <div class="container">
+        <div class="row">
+            <div class="form-group">
+                <label for="cityName">City Name</label>
+                <input type="text" class="form-control" id="cityName" placeholder="Enter City Name">
+            </div>
+            <!-- <div class="form-group">
+                <label for="countryName">Country Name (optional)</label>
+                <input type="text" class="form-control" id="countryName" placeholder="Enter Country Name">
+            </div>
+            <div class="form-group">
+                <label for="zipCode">ZIP Code (optional)</label>
+                <input type="integer" class="form-control" id="zipCode" placeholder="Enter ZIP code">
+            </div> -->
+            <!-- There is no parameter for zip code and country name would have to be converted to the country code -->
+            <!-- I could have a dropdown menu with all the country codes and if US is selected, display another -->
+            <!-- for the states. I don't really have time to do that though, so I think we'll stick with just city name -->
+        </div>
+        <br>
+        <div class="row">
+            <button class="btn btn-primary" type="submit" onclick = 'displayWeather()'>Submit</button>
+        </div>
+        <br>
+        <div class="row">
+            <button class="btn btn-primary" onclick = 'clearData()'>Clear Data</button>
+        </div>
+            <section class="list-group weather-list mt-3">
+
+            </section>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
